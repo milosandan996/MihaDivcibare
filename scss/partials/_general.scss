@@ -1,0 +1,94 @@
+
+$aFont: 'Lato', sans-serif;
+$pFont: 'Lato', sans-serif;
+$headingFont: 'Montserrat', sans-serif;
+$backgroundLighter: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+$backgroundDarker: linear-gradient(45deg, #FCF6BA, #BF953F, #B38728,  #AA771C, #FBF5B7);
+$backgroundColor: $backgroundLighter;
+$backgroundHover: $backgroundDarker;
+$hfBackground: black;
+$logoLight: #edca38;
+$logoMedium: #cb9a28;
+$logoDark: #4e3a18;
+$gray: #424242;
+body {
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+html{
+    font-size: 10px;
+    // 1 rem
+}
+html p{
+    font-size: 2rem !important;
+    font-family: $pFont;
+}
+html a{
+    font-size: 1.6rem;
+    font-family: $aFont;
+    text-decoration: none !important;
+}
+h1{
+    font-family: $headingFont;
+}
+h2{
+    font-family: $headingFont;
+    background: $backgroundColor;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+h3{
+    font-family: $headingFont;
+}
+h4{
+    font-family: $headingFont;
+}
+h5{
+    font-family: $headingFont;
+}
+h6{
+    font-family: $headingFont;
+}
+.mb-6{
+    margin-bottom: 5rem;
+}
+.mt-6{
+    margin-top: 5rem;
+}
+.mr-6{
+    margin-right: 5rem;
+}
+.ml-6{
+    margin-left: 5rem;
+}
+div{
+    .butt{
+        display: none
+    }
+}
+
+@media(max-width: 768px){
+    div{
+        .butt{
+            padding: 10px 15px !important;
+            background: $backgroundColor !important;
+            color: black !important;
+            border-radius: 20px;
+            display: block;
+            font-weight: 600;
+            &:hover{
+                color: white !important;
+                background: $backgroundHover !important;
+            }
+        }
+    }
+}
+
+

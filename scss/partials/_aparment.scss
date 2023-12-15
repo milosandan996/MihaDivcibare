@@ -1,0 +1,129 @@
+#smestaj{
+    background-color: $hfBackground;
+    .ap-left{
+        padding: 2rem;
+        padding-top: 7rem;
+        p{
+            border-radius: 20% 20% 20% 20% / 20% 20% 20% 20%;
+            border: 2px solid white;
+            text-align: center;
+            background: $backgroundColor;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+            padding: 2rem;
+            -webkit-box-shadow:0px 0px 31px 4px rgba(255,238,46,0.59);
+            -moz-box-shadow: 0px 0px 31px 4px rgba(255,238,46,0.59);
+            box-shadow: 0px 0px 31px 4px rgba(255,238,46,0.59);
+            margin-bottom: 3rem;
+        }
+
+    }
+    .ap-right{
+        text-align: center;
+        img{
+            height: 350px;
+        }
+    }
+    .options{
+        padding: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        div.back{
+            background: $backgroundColor;
+            border-radius: 20px;
+            height: 9rem;
+            margin: -0.5rem;
+            &:hover{
+                background: $backgroundHover;
+                color: white !important;
+            }
+            h3{
+                font-size: 2.2rem;
+                top: 2rem;
+                left: 2.5rem;
+            }
+            div{
+                bottom: 1rem;
+                right: 3rem;
+                p{
+                    display: inline-block;
+                    font-size: 2.2rem;
+                }
+                i{
+                    display: inline-block;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px){
+    #smestaj{
+        .ap-left{
+            padding: 5rem;
+            p{
+                border-radius: 30% 0% 30% 0% / 30% 25% 30% 25% !important;
+                padding: 6rem;
+                margin-bottom:0rem;
+            }
+        }
+        .ap-right{
+            text-align: center;
+            margin-top: 14rem;
+            img{
+                height: 500px;
+            }
+        }
+        .mobile{
+            display: none;
+        }
+    }
+    h2{
+        margin-top: 5rem;
+    }
+}
+
+@media(max-width: 768px){
+    #smestaj{
+
+        .mobile{
+            display: block;
+        }
+        .desktop{
+            display: none;
+        }
+        .options:hover .hoveruj{
+            top: -16px;
+        }
+    }
+}
+.hoveruj{
+    display: none;
+    border-radius: 10px;
+    text-align: center;
+    background: $backgroundHover;
+    color: white !important;
+    padding: 1rem;
+    p{
+        font-size: 1.4rem !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+.options:hover .hoveruj{
+    display: block;
+    background-color: #f0f0f0;
+    padding: 5px;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    z-index: 1;
+}
+
+
+
+
+
+

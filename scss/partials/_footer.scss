@@ -1,0 +1,12 @@
+footer{
+    background-color: $hfBackground;
+    padding: 1rem;
+    .logoFooter{
+        height: 10rem;
+    }
+    .hpwebart{
+        background: $backgroundColor;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
